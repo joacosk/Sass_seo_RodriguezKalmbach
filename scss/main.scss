@@ -1,6 +1,8 @@
 @import "tipografia";
 @import "animaciones";
 
+
+
 body { 
     max-width: 100vw;
     overflow:auto;
@@ -70,20 +72,43 @@ body {
         }
     }
 
-    .flechas{
-        max-width: 100px;
-        margin-top: 50%;
-        justify-self: center;
-        align-self: center;
-        animation-name: slideDown;
-
-        img{
-            position: relative;
-            width: 40px;
-            animation-iteration-count: infinite;
-            
-        }
+    .arrow,
+    .arrow::before{
+        position: absolute;     
+        left: 50%;
+        transform: scale(0);
+        transition: transform .4s;
     }
+
+    .arrow{
+        width: 40px;
+        height: 40px;
+        top: 80%;
+        margin: -20px 0 0 -20px;
+        -webkit-transform: rotate(45deg);
+        border-left: none;
+        border-top: none;
+        border-right: 2px #fff solid;
+        border-bottom: 2px #fff solid;
+
+    }
+  
+    .arrow:before{
+        content: '';
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        margin: -10px 0 0 -10px;
+        border-left: none;
+        border-top: none;
+        border-right: 1px #fff solid;
+        border-bottom: 1px #fff solid;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-name: arrow;
+    }
+        
+    
     
 
 

@@ -10,24 +10,14 @@
 }
 
 
-@keyframes parp{
-    0% { 
-        border-color: blue; 
+@keyframes arrow{
+    0%{
+        opacity: 1;
     }
-    100% {
-         border-color: white; 
-        }
+    100%{
+        opacity: 0;
+        transform: translate(-10px, -10px)
+    }
 }
+  
 
-
-@keyframes slideDown{
-    0% {
-        transform: translate(0px, 50px);
-        }
-        50% {
-        transform: translate(0px, 60px);
-        }
-        100% {
-        transform: translate(0px, 50px);
-        }
-    }
