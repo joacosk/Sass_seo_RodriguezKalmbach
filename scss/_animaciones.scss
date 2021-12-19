@@ -1,0 +1,33 @@
+
+@keyframes escribir {
+    from { 
+        width: 90% 
+    }
+    to { 
+        width:0
+    }
+    
+}
+
+
+@keyframes parp{
+    0% { 
+        border-color: blue; 
+    }
+    100% {
+         border-color: white; 
+        }
+}
+
+
+@keyframes slideDown{
+    0% {
+        transform: translate(0px, 50px);
+        }
+        50% {
+        transform: translate(0px, 60px);
+        }
+        100% {
+        transform: translate(0px, 50px);
+        }
+    }
