@@ -1,6 +1,37 @@
+@import "variables";
 @import "tipografia";
 @import "animaciones";
 
+// Links navegacion 
+a {
+    font-family: Andralis;
+    list-style: none;
+    font-size: 1em;
+    color: whitesmoke;
+    margin: 0.4vw;
+    padding: 0.4vw;
+
+    @media screen and (min-width:768px) {
+        font-size: 2em;
+    }
+    @media screen and (min-width:1200px) {
+        font-size: 4em;
+    }
+  }
+
+  .trilce_name {
+    font-family:  HKGrotesk;
+    font-stretch: semi-expanded;
+    font-size: 1rem;
+    
+    @media screen and (min-width:768px){
+        font-size: 1.8em;
+    }
+    @media screen and (min-width:1200px){
+        font-size: 2em;
+    }
+
+  }
 
 
 body { 
@@ -9,10 +40,31 @@ body {
 	font-family: monospace; 
 	background: #468AA5;
     background-image: url("/assest/aside_espada_normal.png");
-    background-position: bottom;
-    background-position-y: 15%;
-    background-size: auto;
+    background-position: -535px -150px;
+    background-size: 600vw;
     background-repeat: no-repeat;
+    //background-position-y: 45%;
+    //background-size: auto;
+    //background-repeat: no-repeat;
+
+    
+    @media screen and (min-width: $bp-small-2){
+        background-size: 500vw;
+        background-position: -550px;
+        background-image: 300% top;
+    }
+    
+    @media screen and (min-width: $bp-med){
+        background-position: -1000px -350px;
+    }
+
+    @media screen and (min-width: $bp-large){
+        background-size: 100vw;
+        background-position: 0 10px;
+    }
+
+
+
 }
 .banner {
     height: 100vh;
@@ -47,12 +99,28 @@ body {
             background: #468AA5;
             animation: escribir 6s steps(100000) 
             alternate;
+            
+            @media screen and (min-width: $bp-large){
+                margin-right: 29%;
+                margin-left: 60%;
+            }
+        
+
+        }
+
+        @media screen and (min-width: $bp-med){
+            font-size: 120px;
+            letter-spacing: 10px;
+            
+            text-shadow: -2px -2px 0px #468AA5,
+            6px 6px 0px #468AA5,
+            12px 12px 0px #DE849E;
+  
         }
     }
 
     h2{
         font-family: Nagoda;
-        margin-right: 25%;
         color: white;
         font-size: 20px;
         letter-spacing: 2px;
@@ -68,8 +136,20 @@ body {
             background: #468AA5;
             animation: escribir 8s steps(100000) 
             alternate;
+
+            @media screen and (min-width: $bp-large){
+                margin-right: 35%;
+                margin-left: 60%;
+            }
         
         }
+
+        @media screen and (min-width: $bp-med){
+            font-size: 40px;
+            letter-spacing: 4px;
+
+        }
+
     }
 
     .arrow,
@@ -78,6 +158,7 @@ body {
         left: 50%;
         transform: scale(0);
         transition: transform .4s;
+
     }
 
     .arrow{
@@ -110,13 +191,4 @@ body {
         
     
     
-
-
-}
-
-#nav{
-    animation: entrada 10s alternate;
-}
-
-
 
