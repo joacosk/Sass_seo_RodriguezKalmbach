@@ -2,17 +2,17 @@
 @font-face {
   font-family: Andralis;
   font-weight: regular;
-  src: url("../assest/Tipografías/Andralis_ND/Andralis_ND_OsF_Regular.otf") format("opentype");
+  src: url("../assets/Tipografías/Andralis_ND/Andralis_ND_OsF_Regular.otf") format("opentype");
 }
 @font-face {
   font-family: HKGrotesk;
   font-weight: regular;
-  src: url("../assest/Tipografías/Hk_Grotesk/HKGrotesk-Regular.otf") format("opentype");
+  src: url("../assets/Tipografías/Hk_Grotesk/HKGrotesk-Regular.otf") format("opentype");
 }
 @font-face {
   font-family: Nagoda;
   font-weight: regular;
-  src: url("../assest/Tipografías/Nagoda/Nagoda.otf") format("opentype");
+  src: url("../assets/Tipografías/Nagoda/Nagoda.otf") format("opentype");
 }
 @keyframes escribir {
   from {
@@ -40,6 +40,36 @@
     opacity: 1;
   }
 }
+.red--twitter {
+  background: #4b4c4d;
+}
+.red--twitter:hover {
+  background: #51aff8;
+}
+.red--twitter:hover .red__nombre {
+  color: #51aff8;
+}
+
+.red--facebook {
+  background: #4b4c4d;
+}
+.red--facebook:hover {
+  background: #2956a3;
+}
+.red--facebook:hover .red__nombre {
+  color: #2956a3;
+}
+
+.red--instagram {
+  background: #4b4c4d;
+}
+.red--instagram:hover {
+  background: #B63184;
+}
+.red--instagram:hover .red__nombre {
+  color: #B63184;
+}
+
 .footer {
   padding: 40px;
   background-color: #fff;
@@ -48,33 +78,6 @@
   text-align: center;
   padding-bottom: 25px;
   color: #4b4c4d;
-}
-.footer .social .red--twitter {
-  background: #4b4c4d;
-}
-.footer .social .red--twitter:hover {
-  background: #51aff8;
-}
-.footer .social .red--twitter:hover .red__nombre {
-  color: #51aff8;
-}
-.footer .social .red--facebook {
-  background: #4b4c4d;
-}
-.footer .social .red--facebook:hover {
-  background: #2956a3;
-}
-.footer .social .red--facebook:hover .red__nombre {
-  color: #2956a3;
-}
-.footer .social .red--instagram {
-  background: #4b4c4d;
-}
-.footer .social .red--instagram:hover {
-  background: #B63184;
-}
-.footer .social .red--instagram:hover .red__nombre {
-  color: #B63184;
 }
 .footer .social a {
   font-size: 20px;
@@ -85,6 +88,10 @@
   margin: 0 8px;
   opacity: 0.75;
   transition: 0.5s ease;
+}
+.footer .social a:hover {
+  opacity: 0.9;
+  transform: scale(1.3, 1.3);
 }
 @media screen and (min-width: 480px) {
   .footer .social a {
@@ -608,13 +615,13 @@ body .grid-gallery__image {
 }
 @media screen and (min-width: 768px) {
   .banner h2 {
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: 4px;
   }
 }
 @media screen and (min-width: 1024px) {
   .banner h2 {
-    font-size: 120px;
+    font-size: 60px;
     letter-spacing: 4px;
   }
 }
@@ -673,16 +680,16 @@ a {
 .trilce_name {
   font-family: Nagoda;
   font-stretch: semi-expanded;
-  font-size: 1rem;
+  font-size: 17px;
 }
 @media screen and (min-width: 768px) {
   .trilce_name {
-    font-size: 1.8em;
+    font-size: 22px;
   }
 }
 @media screen and (min-width: 1200px) {
   .trilce_name {
-    font-size: 2em;
+    font-size: 35px;
   }
 }
 
@@ -719,18 +726,18 @@ body main .descripcion .descripcion__titulo h3 {
 }
 @media screen and (min-width: 480px) {
   body main .descripcion .descripcion__titulo h3 {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
   body main .descripcion .descripcion__titulo h3 {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 40px;
   }
 }
 @media screen and (min-width: 1024px) {
   body main .descripcion .descripcion__titulo h3 {
-    font-size: 70px;
+    font-size: 60px;
     margin: 0 0vw;
   }
 }
@@ -755,7 +762,7 @@ body main .descripcion .descripcion_texto p {
 }
 @media screen and (min-width: 1024px) {
   body main .descripcion .descripcion_texto p {
-    font-size: 50px;
+    font-size: 32px;
     margin: 0 0vw;
     line-height: 1.5em;
   }
