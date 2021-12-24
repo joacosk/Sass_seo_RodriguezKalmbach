@@ -9,9 +9,14 @@ $bp-xl: 1200px;
 // Variables footer
 $font-footer-color: rgb(229,228,228);
 $font-footer-family: Andralis;
-$font-footer-size-sm: 16px;
-$font-footer-size-m: 26px;
-$font-footer-size-l: 32px;
+$font-footer-size-sm: 14px;
+$font-footer-size-m: 16px;
+$font-footer-size-l: 18px;
 
 // Botones
-$font-boton-color: rgb(0,30,30)
+$font-boton-color: rgb(0,30,30);
+
+// Animaciones
+$tiempo-anim: 1s;
+$tiempo-delay: 1.2s;
+

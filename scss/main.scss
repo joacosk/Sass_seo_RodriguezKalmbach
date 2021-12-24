@@ -2,6 +2,7 @@
 @import "tipografia";
 @import "animaciones";
 @import "footer";
+@import "galeriaPublis";
 
 
 // BANNER
@@ -23,21 +24,62 @@
         letter-spacing: 5px;
         top: 50%;
         justify-self: center;
-        align-self: center;    
+        align-self: center;
+        visibility: hidden;    
            
         text-shadow: -1px -1px 0px #468AA5,
           3px 3px 0px #468AA5,
           6px 6px 0px #DE849E;
 
-          #trilceSpam{
-            position:absolute;
-            margin-right: 10%;
-            margin-left: 10%;
-            right:5%;
-            width:0;
-            background: #468AA5;
-            animation: escribir 6s steps(100000) 
-            alternate;
+
+          #w1{
+                animation: fadeIn;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-in;
+                animation-duration: $tiempo-anim;
+                animation-delay: $tiempo-delay;
+                animation-fill-mode: forwards;            }
+            #w2{
+                animation: fadeIn;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-in;
+                animation-duration: $tiempo-anim;
+                animation-delay: $tiempo-delay*2;
+                animation-fill-mode: forwards;
+            }
+            #w3{
+                animation: fadeIn;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-in;
+                animation-duration: $tiempo-anim;
+                animation-delay: $tiempo-delay*3;
+                animation-fill-mode: forwards;
+            }
+            #w4{
+                animation: fadeIn;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-in;
+                animation-duration: $tiempo-anim;
+                animation-delay: $tiempo-delay*4;
+                animation-fill-mode: forwards;
+            }
+            #w5{
+                animation: fadeIn;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-in;
+                animation-duration: $tiempo-anim;
+                animation-delay: $tiempo-delay*5;
+                animation-fill-mode: forwards;
+            }
+            #w6{
+                animation: fadeIn;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-in;
+                animation-duration: $tiempo-anim;
+                animation-delay: $tiempo-delay*6;
+                animation-fill-mode: forwards;
+            }
+
             
             @media screen and (min-width: $bp-large){
                 margin-right: 29%;
@@ -45,7 +87,7 @@
             }
         
 
-        }
+        
 
         @media screen and (min-width: $bp-med){
             font-size: 120px;
@@ -66,22 +108,18 @@
         justify-self: center;
         align-self: center;  
         justify-self: center;
-        align-self: center;   
-        
-        #editorialSpam{
-            position:absolute;
-            right:5%;
-            width:0;
-            background: #468AA5;
-            animation: escribir 8s steps(100000) 
-            alternate;
+        align-self: center;  
+        visibility: hidden; 
 
-            @media screen and (min-width: $bp-large){
-                margin-right: 35%;
-                margin-left: 60%;
-            }
+        animation: fadeIn;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: $tiempo-anim*1.5;
+        animation-delay: $tiempo-delay*7;
+        animation-fill-mode: forwards;  
         
-        }
+        
+        
 
         @media screen and (min-width: $bp-med){
             font-size: 40px;
@@ -194,6 +232,20 @@ body {
                 p{
                     text-align: justify;
                     font-size: 16px;
+
+                    @media screen and (min-width: $bp-small-2){
+                        font-size: 18px;
+                    }
+                    
+                    @media screen and (min-width: $bp-med){
+                        font-size: 20px;
+                        line-height: 40px ;
+                    }
+                
+                    @media screen and (min-width: $bp-large){
+                        font-size: 22px;
+                        margin: 0 5vw;
+                    }
                 }
             }
         }
