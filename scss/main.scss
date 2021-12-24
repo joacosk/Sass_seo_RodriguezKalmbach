@@ -1,71 +1,10 @@
 @import "variables";
 @import "tipografia";
 @import "animaciones";
-
-// Links navegacion 
-a {
-    font-family: Andralis;
-    list-style: none;
-    font-size: 1em;
-    color: whitesmoke;
-    margin: 0.4vw;
-    padding: 0.4vw;
-
-    @media screen and (min-width:768px) {
-        font-size: 2em;
-    }
-    @media screen and (min-width:1200px) {
-        font-size: 4em;
-    }
-  }
-
-  .trilce_name {
-    font-family:  HKGrotesk;
-    font-stretch: semi-expanded;
-    font-size: 1rem;
-    
-    @media screen and (min-width:768px){
-        font-size: 1.8em;
-    }
-    @media screen and (min-width:1200px){
-        font-size: 2em;
-    }
-
-  }
+@import "footer";
 
 
-body { 
-    max-width: 100vw;
-    overflow:auto;
-	font-family: monospace; 
-	background: #468AA5;
-    background-image: url("/assest/aside_espada_normal.png");
-    background-position: -535px -150px;
-    background-size: 600vw;
-    background-repeat: no-repeat;
-    //background-position-y: 45%;
-    //background-size: auto;
-    //background-repeat: no-repeat;
-
-    
-    @media screen and (min-width: $bp-small-2){
-        background-size: 500vw;
-        background-position: -550px;
-        background-image: 300% top;
-    }
-    
-    @media screen and (min-width: $bp-med){
-        background-position: -1000px -350px;
-    }
-
-    @media screen and (min-width: $bp-large){
-        background-size: 100vw;
-        background-position: 0 10px;
-    }
-
-
-
-}
+// BANNER
 .banner {
     height: 100vh;
     max-width: 50vw;
@@ -189,6 +128,93 @@ body {
         animation-name: arrow;
     }
         
-    
-    
+}
 
+// Links navegacion 
+a {
+    font-family: Andralis;
+    list-style: none;
+    font-size: 1em;
+    color: whitesmoke;
+    margin: 0.4vw;
+    padding: 0.4vw;
+
+    @media screen and (min-width:768px) {
+        font-size: 1.5em;
+    }
+    @media screen and (min-width:1200px) {
+        font-size: 3em;
+    }
+  }
+
+  .trilce_name {
+    font-family:  HKGrotesk;
+    font-stretch: semi-expanded;
+    font-size: 1rem;
+    
+    @media screen and (min-width:768px){
+        font-size: 1.8em;
+    }
+    @media screen and (min-width:1200px){
+        font-size: 2em;
+    }
+
+  }
+
+
+body { 
+    max-width: auto;
+    overflow:auto;
+	font-family: monospace; 
+	background: #468AA5;
+    background-image: url("/assets/aside_espada_normal.png");
+    background-position: -535px -150px;
+    background-size: 600vw;
+    background-repeat: no-repeat;
+    //background-position-y: 45%;
+    //background-size: auto;
+    //background-repeat: no-repeat;
+    
+    main{
+        display: flex;
+        position: relative;
+        direction: row;
+        width: auto;
+        margin: 20vh 10vw;
+
+        .descripcion{
+            border: 1px transparent;
+            border-radius: 0.3rem;
+            padding: 5vh 10vw;
+            background-color: rgba(250,250,250,0.5);
+            
+            
+            .descripcion_texto{
+                margin-top: 5vh;
+                p{
+                    text-align: justify;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    
+    @media screen and (min-width: $bp-small-2){
+        background-size: 500vw;
+        background-position: -550px;
+        background-image: 300% top;
+    }
+    
+    @media screen and (min-width: $bp-med){
+        background-position: -1000px -350px;
+    }
+
+    @media screen and (min-width: $bp-large){
+        background-size: 100vw;
+        background-position: 0 10px;
+    }
+
+
+
+}
