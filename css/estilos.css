@@ -584,7 +584,7 @@ body .grid-gallery__image {
 }
 @media screen and (min-width: 768px) {
   .banner h1 {
-    font-size: 300px;
+    font-size: 600px;
     letter-spacing: 10px;
     text-shadow: -2px -2px 0px #468AA5, 6px 6px 0px #468AA5, 12px 12px 0px #DE849E;
   }
@@ -779,4 +779,4 @@ body main .descripcion .descripcion_texto p {
   }
 }
 
-/*# sourceMappingURL=cssPruebas.css.map */
+/*# sourceMappingURL=estilos.css.map */
