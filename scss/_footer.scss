@@ -1,4 +1,15 @@
 
+// Declaramos nuestro mapa con los valores de las 4 redes que queremos usar
+$redes: (
+	twitter: #51aff8,
+	facebook: #2956a3,
+	//linkedin: #0076b8,
+	instagram: #B63184
+);
+
+
+
+
 .footer{
     padding: 40px ;
     background-color: #fff;
@@ -8,6 +19,17 @@
         padding-bottom: 25px;
         color: #4b4c4d;
 
+        @each $red, $color in $redes {
+            .red--#{$red} {
+                background: #4b4c4d;
+                &:hover {
+                    background: $color;
+                    .red__nombre {
+                        color: $color;
+                    }
+                }
+            }
+        }
         a{
             font-size: 20px;
             color:inherit;
@@ -18,11 +40,7 @@
             opacity: 0.75;
             transition: .5s ease;
             
-            &:hover{
-                opacity: 0.9;
-                transform: scale(1.3,1.3);
 
-            }
 
             @media screen and (min-width: $bp-small-2){
                 font-size: 20px;
@@ -33,7 +51,7 @@
             }
         
             @media screen and (min-width: $bp-large){
-                font-size: 35px;
+                font-size: 55px;
             }
         }
     }
@@ -77,12 +95,11 @@
             grid-template-rows: 1fr;
             grid-template-areas: 
             "inicio  conocenos  publi  eventos contacto";
-            font-size: 10px;
+            font-size: 15px;
         }
 
         li{
             
-         
             a{
                 color: inherit;
                 text-decoration: none;
